@@ -11,7 +11,7 @@ namespace Freehand
 
         public int StrokeWidth { get; set; }
         public Color StrokeColor { get; set; }
-        public Strokes Strokes { get; set; }
+        public Strokes Strokes { get; private set; }
 
         public int LastX {
             get { return Strokes.LastX; }

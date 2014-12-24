@@ -4,9 +4,9 @@ using Xamarin.Forms;
 namespace Freehand
 {
     public class Stroke {
-        public Color Color { get; set; }
-        public int Width { get; set; }
-        public List<Point> Points { get; set; }
+        public Color Color { get; private set; }
+        public int Width { get; private set; }
+        public List<Point> Points { get; private set; }
         public Stroke(Color color,int width) {
             Color = color;
             Width = width;

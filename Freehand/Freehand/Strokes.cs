@@ -5,7 +5,7 @@ using Xamarin.Forms;
 namespace Freehand
 {
     public class Strokes {
-        public List<Stroke> Data { get; set; }
+        public List<Stroke> Data { get; private set; }
         private Stroke _stroke;//現在描画中の線
         private int _strokeWidth;//描画中の線の太さ（Moveの時に太さの範囲内のデータを追加しないようにするため記憶しておく）
         //最後に追加したデータ
